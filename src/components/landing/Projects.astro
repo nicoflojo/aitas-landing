@@ -2,25 +2,25 @@
 // Define the array of projects directly in the frontmatter script.
 const otherprojects = [
   {
-    "url": "https://www.lexingtonthemes.com/",
-    "title": "Lexington Themes",
-    "description": "Premium themes and UI Kits For designers, developers, businesses, and personal use — Beautifully crafted with Astro.js, and Tailwind CSS — Simple & easy to customize."
+    "url": "",
+    "title": "Part Selection",
+    "description": "We assess the technical details of your parties and assemblies, and then determine the best manufacturing methods."
   },
   {
-    "url": "https://www.oxbowui.com/",
-    "title": "Oxbow UI",
-    "description": "Free and premium components, elements and layouts Beautifully crafted with Tailwind CSS — Simple & easy to customise."
+    "url": "",
+    "title": "Design for Manufacturing",
+    "description": "We enhance your designs and optimize perofrmance and quality."
   },
   {
-    "url": "https://www.colorsandfonts.com/",
-    "title": "Colors & Fonts",
-    "description": "Color and typography resources and inspiration for Web Developers and Digital Designers."
+    "url": "",
+    "title": "Qualification",
+    "description": "We qualify your process, validate the design, material properties, and dimensional accuracy."
   },
   {
-    "url": "https://www.svgdoodles.com/",
-    "title": "SVG Doodles",
-    "description": "A free collection of 208 super duper SVG doodles for your creative projects."
-  }
+    "url": "",
+    "title": "Serial Production",
+    "description": "We manufacture components at an industrial scale, leveraging our infrastructure."
+  },
   // Add more projects as needed...
 ];
 
@@ -45,8 +45,7 @@ function calculateAosDuration(index) {
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <span>Main</span>
-        <span class="font-bold">projects</span>
+        <span class="font-bold">Process</span>
       </h3>
     </div>
 
@@ -61,7 +60,7 @@ function calculateAosDuration(index) {
             data-aos="fade-up"
             data-aos-duration={calculateAosDuration(index)}
           >
-            <a href={project.url}>
+            {/* <a href={project.url}> */}
               <div class="h-full flex flex-col justify-between">
                 <div>
                   <p class="group-hover:text-secondary/70 text-secondary text-9xl font-black lg:rotate-90 xl:-translate-x-28 lg:-translate-x-16 lg:mb-8 xl:mb-0  lg:pb-8">
@@ -72,13 +71,13 @@ function calculateAosDuration(index) {
                     {project.description}
                   </p>
                 </div>
-                <div>
+                {/* <div>
                   <p class="mt-3 text-base font-semibold">
                     Learn more &nbsp; ↗
                   </p>
-                </div>
+                </div> */}
               </div>
-            </a>
+            {/* </a> */}
           </li>
         ))
       }
